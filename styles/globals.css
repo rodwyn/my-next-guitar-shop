@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
 }
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -33,55 +34,4 @@ main {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
-}
-
-/* header */
-
-.header {
-  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(/img/header.jpg);
-  padding: 6rem 0;
-  background-size: cover;
-  background-position: center;
-}
-
-.header .logo {
-  width: 25rem;
-}
-
-.bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header .navigation {
-  display: flex;
-  gap: 2rem;
-  margin-top: 5rem;
-}
-
-.header .navigation a {
-  color: var(--white);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.4rem;
-  padding: .5rem;
-  transition-property: background-color;
-  transition-duration: 300ms;
-}
-
-.header .navigation a:hover {
-  background-color: var(--primary);
-}
-
-@media (min-width: 768px) {
-  .bar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .header .navigation {
-    margin-top: 0;
-  }
 }

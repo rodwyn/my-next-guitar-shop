@@ -1,0 +1,49 @@
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(/img/header.jpg);
+  padding: 6rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.navigation a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4rem;
+  padding: .5rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.navigation a:hover,
+.active {
+  background-color: var(--primary);
+}
+
+.logo {
+  width: 25rem;
+}
+
+@media (min-width: 768px) {
+  .bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header .navigation {
+    margin-top: 0;
+  }
+}
