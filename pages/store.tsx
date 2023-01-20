@@ -23,17 +23,6 @@ export default function Store({ guitars  }) {
   )
 }
 
-// export async function getStaticProps() {
-//   const response = await fetch(`${ process.env.API_URL }/guitars?populate=image`);
-//   const { data:guitars } = await response.json();
-
-//   return {
-//     props: {
-//       guitars
-//     }
-//   }
-// }
-
 export async function getServerSideProps() {
   const response = await fetch(`${ process.env.API_URL }/guitars?populate=image`);
   const { data:guitars } = await response.json();
